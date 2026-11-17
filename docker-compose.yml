@@ -34,6 +34,9 @@ services:
       RESOLVER: 127.0.0.11
       CF_CONNECTING_IP: ${CF_CONNECTING_IP:-}
       BASE_PATH: ""
+      
+    expose:
+    - "80"
 
 volumes:
   opengym-data:
